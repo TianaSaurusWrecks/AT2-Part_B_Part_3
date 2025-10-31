@@ -27,3 +27,8 @@ console.log("Sliced from myString: ", sliced);
 
 let sub = anotherString.substring(6, 9); /* takes "the" from anotherString */
 console.log("Substring from anotherString: ", sub);
+
+/* Question 3.4 change string to upper and lower case */
+/* Change myName string to upper case: */
+console.log("My name in upper case: ", myName.toUpperCase());
+console.log("My name in lower case: ", myName.toLowerCase());
