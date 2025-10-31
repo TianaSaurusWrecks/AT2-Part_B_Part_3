@@ -32,3 +32,22 @@ console.log("Substring from anotherString: ", sub);
 /* Change myName string to upper case: */
 console.log("My name in upper case: ", myName.toUpperCase());
 console.log("My name in lower case: ", myName.toLowerCase());
+
+/* Question 3.5 use concat, trim, replace, and split, to create new strings */
+/* Use the concat method to join the hello string and myName string: */
+let joined = hello.concat(" ", myName);
+console.log("Concatenated string: ", joined);
+
+/* Trim the spaces from anotherString*/
+let trimmed = anotherString.trim(0, 3);
+console.log("Trimmed string: ", trimmed);
+console.log("Untrimmed string: ", anotherString);
+
+/* replace method to change "is a" to an empty space in myString */
+let replaced = myString.replace("is a ","");
+console.log("Replaced 'is a' with an empty space: ", replaced);
+
+/* use the split method on myString using the spaces to break the string */
+/* split() method is uded to divide a string into an array of substrings based on a specified separator. It does not modify the original string but instead returns a new array */
+let splitArray = myString.split(" ");
+console.log("Split myString (at the spaces) into an array: ", splitArray);
