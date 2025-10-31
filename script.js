@@ -12,3 +12,10 @@ console.log(myString);
 console.log(anotherString); 
 console.log(hello);
 console.log(myName);
+
+/* Question 3.2 */
+/* Use the utility functions to find out the following information*/
+/* a. Length of myString b. fist character of myString  c. 11th character of myString */
+console.log("The length of myString is: ", myString.length);
+console.log("The first character of myString is: ", myString.charAt(0));
+console.log("The 11th character of myString is: ", myString.charAt(10));
