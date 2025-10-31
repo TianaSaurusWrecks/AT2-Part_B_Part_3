@@ -51,3 +51,28 @@ console.log("Replaced 'is a' with an empty space: ", replaced);
 /* split() method is uded to divide a string into an array of substrings based on a specified separator. It does not modify the original string but instead returns a new array */
 let splitArray = myString.split(" ");
 console.log("Split myString (at the spaces) into an array: ", splitArray);
+
+/* Question 3.6 Create Algorithms for file handling 
+
+Algorithm for saving a string to a text file: 
+Step 1. Create a string variable
+Step 2. Use fs.writeFileSync() to write the string to a text file
+Step 3. Print a confirmation message to the console
+
+Algorithm for reading in a text file: 
+Step 1. Use fs.readFileSync() to read the text file
+Step 2. Convert the buffer data to a string
+Step 3. Print the text read from the file to the console
+*/
+
+/* Question 3.7 Wite a text file */
+const fs = require('fs'); /* Import the built-in fs module */
+let textToWrite = "This is the string of text to be written to a text file.";
+fs.writeFileSync("output.txt", textToWrite, "utf8");
+console.log("File 'output.txt has been written successfully.");
+
+/* Question 3.8 Read in the contents of the file */
+let fileName = "output.txt";
+let readTextFile = fs.readFileSync(fileName, "utf8");
+console.log("Text read from file:");
+console.log(readTextFile);
